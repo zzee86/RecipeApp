@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.basicversion.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment2"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_createPage"
+            app:destination="@id/createPage" />
+        <action
+            android:id="@+id/action_FirstFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_createdPageInformation"
+            app:destination="@id/createdPageInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.basicversion.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <argument
+            android:name="recipe"
+            app:argType="com.example.basicversion.model.Recipe" />
+        <action
+            android:id="@+id/action_SecondFragment_to_createPage"
+            app:destination="@id/createPage" />
+        <action
+            android:id="@+id/action_SecondFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPage"
+        android:name="com.example.basicversion.CreatePage"
+        android:label="fragment_create_page"
+        tools:layout="@layout/fragment_create_page" >
+        <action
+            android:id="@+id/action_createPage_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_createPage_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_createPage_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.basicversion.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_createPage"
+            app:destination="@id/createPage" />
+        <action
+            android:id="@+id/action_mapsFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/createdPageInformation"
+        android:name="com.example.basicversion.CreatedPageInformation"
+        android:label="activity_created_page_information"
+        tools:layout="@layout/activity_created_page_information" />
+</navigation>
