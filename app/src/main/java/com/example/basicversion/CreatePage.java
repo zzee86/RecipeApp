@@ -39,7 +39,6 @@ public class CreatePage extends Fragment {
     private FragmentCreatePageBinding binding;
     private ListView listView;
     private Button createRecipeBtn;
-    private Spinner spinner;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState

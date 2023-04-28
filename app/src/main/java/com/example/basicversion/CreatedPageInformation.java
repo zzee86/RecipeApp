@@ -32,8 +32,6 @@ public class CreatedPageInformation extends AppCompatActivity {
     private LinearLayout back_btn_recipes_linear;
     private Button back_btn_recipes, editRecipe;
 
-    BottomNavigationView bottomNavigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

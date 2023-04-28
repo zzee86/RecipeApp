@@ -4,12 +4,6 @@
     tools:context="com.example.basicversion.MainActivity">
 
     <item
-        android:id="@+id/mapsFragment"
-        android:orderInCategory="100"
-        android:icon="@drawable/ic_baseline_map_24"
-        android:title="Map" />
-
-    <item
         android:id="@+id/FirstFragment"
         android:orderInCategory="100"
         android:icon="@drawable/ic_search"

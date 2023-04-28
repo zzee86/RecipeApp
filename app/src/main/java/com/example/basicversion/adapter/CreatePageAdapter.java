@@ -64,7 +64,7 @@ public class CreatePageAdapter extends ArrayAdapter<CreatedRecipes> {
                             recipes.getTitle() + " has been removed"+ "\n" + "refresh to view changes",
                             Toast.LENGTH_LONG).show();
 
-                    //like_button.setBackgroundResource(R.drawable.ic_favourite);
+                    like_button.setBackgroundResource(R.drawable.ic_favourite);
                 } else {
                    recipes.setLikeStatus("1");
                     likeDatabase.insertIntoDatabase(String.valueOf(recipes.getId()), recipes.getTitle(), recipes.getInstructions(), recipes.getIngredients(),recipes.getLikeStatus(), recipes.getCookingTime(),recipes.getYield());
@@ -73,7 +73,7 @@ public class CreatePageAdapter extends ArrayAdapter<CreatedRecipes> {
                             Toast.LENGTH_LONG).show();
 
 
-                    // like_button.setBackgroundResource(R.drawable.ic_baseline_red_heart_24);
+                     like_button.setBackgroundResource(R.drawable.ic_baseline_red_heart_24);
                 }
             }
 

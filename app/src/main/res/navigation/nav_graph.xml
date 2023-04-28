@@ -21,9 +21,6 @@
             android:id="@+id/action_FirstFragment_to_createPage"
             app:destination="@id/createPage" />
         <action
-            android:id="@+id/action_FirstFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
-        <action
             android:id="@+id/action_FirstFragment_to_createdPageInformation"
             app:destination="@id/createdPageInformation" />
     </fragment>
@@ -42,9 +39,6 @@
         <action
             android:id="@+id/action_SecondFragment_to_createPage"
             app:destination="@id/createPage" />
-        <action
-            android:id="@+id/action_SecondFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/createPage"
@@ -57,24 +51,6 @@
         <action
             android:id="@+id/action_createPage_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_createPage_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/mapsFragment"
-        android:name="com.example.basicversion.MapsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" >
-        <action
-            android:id="@+id/action_mapsFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_mapsFragment_to_createPage"
-            app:destination="@id/createPage" />
-        <action
-            android:id="@+id/action_mapsFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
     </fragment>
     <activity
         android:id="@+id/createdPageInformation"
